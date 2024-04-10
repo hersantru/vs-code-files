@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for my cutu sweetheart</title>
+    <style>
+        @property --rotate {
+            syntax: "<angle>";
+            initial-value: 132deg;
+            inherits: false;
+        }
+
+        :root{
+            --card-height: 65vh;
+            --card-width: calc(var(--card-height) / 1.5);
+        }
+        body{
+            min-height: 100vh;
+            background: #212534;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            box-sizing: border-box;
+        }
+        .card{
+            background: #191c29;
+            width: var(--card-width);
+            height: var(--card-height);
+            padding: 3px;
+            position: relative;
+            border-radius: 6px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 0.59em;
+            color: rgb(88 199 250 / 0%);
+            cursor: pointer;
+            font-family: cursive;
+        }
+        .card:hover{
+            color: rgb(88 199 250 / 100%);
+            transition: color 1s;
+        }
+        .card:hover::before,
+        .card:hover::after{
+            animation: none;
+            opacity: 0;
+        }
+        .card::before{
+            content: " ";
+            width: 104%;
+            height: 102%;
+            border-radius: 8px;
+            background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+            position: absolute;
+            z-index: -1;
+            top: -1%;
+            left: -2%;
+            animation: spin 2.5s linear infinite;
+        }
+        .card::after{
+            position: absolute;
+            content: " ";
+            top: calc(var(--card-height) / 6);
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            transform: scale(0.8);
+            filter: blur(calc(var(--card-height) / 6));
+            background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+            opacity: 1;
+            transition: opacity .5s;
+            animation: spin 2.55 linera infinite;
+        }
+        @keyframes spin{
+            0%{
+                --rotate: 0deg;
+            }
+            100%{
+                --rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        very very happiesttt one year anniversary to my gorgeous darling,
+        im the luckiest to be able to spend this year with you,
+        and many more that have to come, 
+        im really glad that this day last year,
+        you actually gathered the courage to confess your feelings,
+        because of which we're here rn, omg we're girlfriends and married ajajajjjajaj
+        okay okay, i've to be more professional here,
+        so here goes my little love rant, that could fit in this cutu box and i really tried my best love, 
+        i know im never going to find the words perfect enough to describe what you really mean to me,
+        but i want to spend the rest of my lifetimes looking for them, 
+        yes my love, i love you and i really mean it when i say so,
+        i love you insanely, i love you like i can't live without doing so, 
+        and the same love of yours has given me smiles which i wear always, 
+        one year passed by so quickly and many many more have to come and they'll too pass,
+        just like this, but my love for you is never ending meri jaan, 
+        with every moment that passes,
+        every breath that i take,
+        every smile that you pass,
+        every laugh that you make,
+        every second that you simply exist sweetheart,
+        more and more love is only going to add into the love puddle, 
+        you are all i've known what love is, 
+        you truly are my love, 
+        you give meaning to it,
+        and im going to love you till the end of time. 💖
+    </div>
+</body>
+
+</html>
